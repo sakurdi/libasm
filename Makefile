@@ -15,7 +15,7 @@ CFLAGS = -f elf64
 	$(CC) $(CFLAGS) -o $@ $<
 
 $(NAME): $(OBJ_FILES)
-	@ar r $(NAME) $(OBJ_FILES)
+	@ar r $@ $<
 
 all: $(NAME)
 
